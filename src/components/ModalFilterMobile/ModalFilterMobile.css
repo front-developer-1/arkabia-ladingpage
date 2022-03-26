@@ -1,0 +1,49 @@
+.modalFilterMobile-container {
+    max-width: 363px;
+    min-height: 225px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 24px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.modalFilterMobile-header {
+    padding: 9px 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalFilterMobile-header--title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modalFilterMobile-header--icon {
+    display: flex;
+}
+
+.modalFilterMobile-body {
+    padding: 16px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modalFilterItem-options--cell .city-country-display {
+    padding: 0px;
+}
+
+.modalFilterItem-options--cell .city-country-display span {
+    line-height: 16px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}

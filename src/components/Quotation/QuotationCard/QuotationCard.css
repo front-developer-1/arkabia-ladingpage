@@ -1,0 +1,182 @@
+.quotationCard{
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+    
+}
+
+.quotationCard-container {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 390px; */
+}
+
+.quotationCard-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.quotationCard-header-left h1, .quotationCard-header-left p {
+    margin: 0px;
+}
+
+
+.quotationCard-header-rigth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px
+}
+
+.quotationCard-header-date {
+    margin: 0px;
+    font-family: 'Faktum';
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--gray-1) ;
+}
+
+.quotationCard-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+    max-height: 28px;
+}
+
+.quotationCard-body p {
+    margin: 0px;
+}
+
+.quotationCard-number {
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    border: 3px solid rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotation-company {
+    display: flex;
+    flex-direction: column;
+	gap: 10px;
+}
+
+.company-row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+	gap: 5px;
+    min-height: 20px;
+}
+
+.company-header-values {
+   	background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.company-row-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.company-row-values {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+}
+
+.company-row-items-rantin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: var(--yellow);
+    border-radius: 12px;
+    width: 55.67px;
+    height: 28px;
+}
+
+.quotationCard-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.quotationCard-btns button {
+    font-family: 'Faktum-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 18px;
+    max-width: 10rem;
+}
+
+.quotationCard-btns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+}
+
+.quotationCard-more {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px
+}
+
+.quotationCard-num {
+    color: var(--black-50);
+}
+
+.comapare-quotation-action{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quotationCard-bottom{
+    margin-bottom: 20px;
+}
+
+.quotationCard-colorText {
+   color: var(--gray-1); 
+}
+
+@media (max-width: 785px) {
+
+    .quotationCard {
+        padding: 20px 10px;
+        border-radius: 24px;
+    }
+
+    .quotationCard-header {
+        gap:20px;   
+    }
+
+
+}

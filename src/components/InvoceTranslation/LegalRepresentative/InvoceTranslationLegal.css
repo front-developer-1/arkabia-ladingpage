@@ -1,0 +1,67 @@
+.invoceTranslationLegal-main {
+    max-width: 52.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    backdrop-filter: blur(40px);
+	border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+}
+
+.invoceTranslationLegal-header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.invoceTranslationLegal-color {
+    color: var(--gray-1);
+}
+
+.invoceTranslationLegal-textField {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.invoceTranslationLegal-width {
+    width: 15.833rem !important;
+}
+
+.invoceTranslationLegal-document {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.invoceTranslationLegal-document .dropdown {
+    width: 24.375rem;
+}
+
+@media (max-width: 820px) { 
+    .invoceTranslationLegal-textField {
+        flex-direction: column;
+    }
+
+    .invoceTranslationLegal-document  {
+        flex-direction: column;
+    }
+
+    .invoceTranslationLegal-width {
+        width: 100% !important;
+    }
+
+    .invoceTranslationLegal-document .dropdown {
+        width: 100% !important;
+    }
+
+    .invoceTranslationLegal-document .textfield input {
+        width: 100% !important;
+    }
+}

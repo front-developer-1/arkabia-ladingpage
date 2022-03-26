@@ -1,0 +1,39 @@
+.paySafe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.paySafe-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.paySafe-cert {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.paySafe-colorTitle {
+    color: var(--gray-1);
+}
+
+.paySafe-colorDescription {
+    color: var(--gray-3);
+}
+
+
+@media (max-width: 650px) { 
+    .paySafe-title {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .paySafe-cert {
+        width: auto;
+    }
+ }

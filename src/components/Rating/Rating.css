@@ -1,0 +1,17 @@
+.rating {
+	max-height: 28px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	background-color: var(--yellow);
+	border-radius: 12px;
+	padding: 5px 10px;
+}
+
+.rating span {
+	color: var(--gray-1);
+}
+
+.rating div img {
+	display: flex;
+}

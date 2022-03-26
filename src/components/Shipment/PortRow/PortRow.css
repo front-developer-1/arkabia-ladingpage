@@ -1,0 +1,16 @@
+.portrow {
+	display: flex;
+	align-items: center;
+}
+
+.portrow-img {
+	width: 16px;
+	height: 12px;
+}
+
+.portrow-info {
+	margin-left: 5px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}

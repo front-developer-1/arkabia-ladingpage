@@ -1,0 +1,49 @@
+.custom-button {
+	color: var(--white);
+	border: none;
+	border-radius: 12px;
+	box-shadow: 0px 8px 20px var(--black-15);
+	backdrop-filter: blur(40px);
+	cursor: pointer;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.btn-large {
+	min-width: 160px;
+	height: 43px;
+	padding: 10px 50px;
+}
+
+.btn-normal {
+	min-width: 132px;
+	height: 40px;
+	padding: 10px 40px;
+}
+
+.btn-small {
+	min-width: 105px;
+	height: 38px;
+	padding: 10px 30px;
+}
+
+.btn-extra-small {
+	min-width: 69px;
+	height: 25px;
+	padding: 5px 15px;
+}
+
+.btn-disabled {
+	border: 1px solid rgba(0, 0, 0, 0.25) !important;
+	color: var(--gray-3) !important;
+	box-sizing: border-box !important;
+	box-shadow: none;
+}
+
+.btn-only-text {
+	padding: 6px 3px;
+	color: var(--blue-2);
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}

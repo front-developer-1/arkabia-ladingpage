@@ -1,0 +1,16 @@
+.faq-input {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px;
+	backdrop-filter: blur(40px);
+	border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+	max-width: 683px;
+}
+
+.faq-textarea-container {
+	padding-left: 20px;
+}

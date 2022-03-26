@@ -1,0 +1,37 @@
+.uploadtext {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+    max-width: 840px;
+}
+
+.uploadtext-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uploadtext-bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.uploadtext-bottom-btns {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;	
+	gap: 10px;
+}
+
+.uploadtext h1,
+.uploadtext p,
+.uploadtext span {
+    margin: 0;
+	color: var(--gray-1);
+}

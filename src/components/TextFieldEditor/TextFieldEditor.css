@@ -1,0 +1,239 @@
+.textFieldEditor-container {
+    position: relative; 
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+
+    background: var(--white-90);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 12px 12px 12px 12px;
+
+}
+.textFieldEditor-blockquote {
+    min-height: 230px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    cursor: text;
+}
+
+.textFieldEditor-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.public-DraftEditorPlaceholder-inner {
+    color: var(--gray-3);
+    font-family: "Faktum";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.textFieldEditor-controls {
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 0px 0px 12px 12px;
+    cursor: pointer;
+}
+
+.public-DraftStyleDefault-block {
+    color: var(--gray-1);
+    font-family: "Faktum";
+}
+
+.textFieldEditor-controls__style {
+    display: flex;
+    align-items: center;
+}
+
+.textFieldEditor-controls__style-block {
+    padding: 11px 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* style dropdown  */
+.styleDropdown-container {
+    padding: 0px 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.styleDropdown-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.styleDropdown-header img {
+    display: flex;
+}
+
+.styleDropdown-header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.styleDropdown-options {
+    display: none;  
+}
+
+.styleDropdown-options-show {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.styleDropdown-select {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.styleDropdown-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.styleSelect-title {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px
+}
+
+.style-list__item {
+    padding: 10px 20px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Faktum';
+    width: 100%;
+    background: var(--white-50);
+}
+
+.style-list__item:hover {
+    background: var(--black-05);
+}
+
+.style-list {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.style-list {
+    display: none;
+}
+
+.style-select__click {
+    background: var(--white-50);
+}
+
+.styleDropdown-show {
+    display: block;
+    max-width: 140px;
+    margin-top: 20px;
+}
+.style-dropdown-no-transform {
+    transform: none;
+}
+
+
+/* style dots */
+
+.styleDot-container {
+    padding: 12.5px 14px;
+    display: flex;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
+.textFieldEditor-time {
+    width: 58%;
+    padding: 17px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textFieldEditor__active {
+    background-color: var(--black-15);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive */
+
+@media (max-width: 680px) {
+    
+    .textFieldEditor-controls__style-block {
+        padding: 10px;
+    }
+
+    .styleDropdown-container {
+        padding: 10px;
+    }
+
+    .styleDot-container  {
+        padding: 10px;
+    }
+
+    .textFieldEditor-time {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 5px;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .textFieldEditor-controls__style-block {
+        padding: 5px;
+    }
+
+    .styleDropdown-container {
+        padding: 5px;
+    }
+
+    .styleDot-container  {
+        padding: 5px;
+    }
+
+    .textFieldEditor-time {
+        padding: 5px;
+        width: 40%;
+        gap: 0px;
+        justify-content: center;
+    } 
+
+    .styleDropdown-select {
+        gap: 0px;
+    }
+
+    .style-list__item {
+        justify-content: flex-start;
+        width: auto;
+    }
+    .textFieldEditor-time .smalltext {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,38 @@
+/* contendor principal del componente */
+.quotationsHomePage-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: scroll;
+}
+
+.quotationsHomePage-container .tableQuotation-container .row {
+    height: 10px;
+}
+
+ .quotationsHomePage-container .tableQuotation-container .quotationsHomePage-table--head {
+    min-height: 58px;
+}
+
+@media (max-width: 1024px) {
+    .quotationsHomePage-container .tableQuotation-container .row {
+        height: auto;
+        max-height: 45px;
+    } 
+}
+
+@media (max-width: 580px) {
+    .quotationsHomePage-container .tableQuotation-container .quotationsHomePage-table--head {
+        min-height: 40px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .quotationsHomePage-container .tableQuotation-container .quotationsHomePage-table--head {
+        min-height: 30px;
+    }
+
+
+}
+

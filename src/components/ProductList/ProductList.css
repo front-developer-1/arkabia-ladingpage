@@ -1,0 +1,22 @@
+.product-list {
+	padding: 15px;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.product-list .btn-only-text {
+	margin-left: auto;
+}
+
+.product-list h2 {
+	margin: 0;
+	color: var(--gray-1);
+}
+
+.product-list-arr {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}

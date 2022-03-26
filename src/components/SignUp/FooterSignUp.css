@@ -1,0 +1,21 @@
+.footerSignUp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.footerSignUp-divider {
+    position: static;
+    width: 300px;
+    height: 2px;
+    background-color: #C4C4C4;
+    border: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footerSignUp-colorText {
+    color: var(--gray-1);
+    text-align: center;
+}

@@ -1,0 +1,91 @@
+.textarea {
+	position: relative;
+}
+
+.textarea textarea {
+	width: 100%;
+	min-height: 92px;
+	padding: 15px;
+	border-radius: 12px;
+	box-sizing: border-box;
+	outline: none;
+	border: 1px solid var(--black-15);
+	background-color: var(--white-90);
+	text-overflow: ellipsis;
+	resize: none;
+}
+
+.textarea textarea::-webkit-scrollbar {
+	width: 0;
+}
+
+.textarea-title {
+	pointer-events: none;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	color: var(--gray-3);
+	/* transform: translateY(-50%); */
+	transition: 
+	top 0.3s ease,
+	font-size 0.3s ease,
+	color 0.3s ease;
+}
+
+.textarea textarea:focus + .textarea-title {
+	top: 15px;
+	font-weight: normal;
+	font-size: 0.75rem;
+	line-height: 15px;
+	color: var(--black);
+}
+
+.textarea textarea:focus::placeholder {
+	opacity: 1;
+	color: var(--gray-3);
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 20px;
+}
+
+.textarea textarea::placeholder {
+	opacity: 0;
+}
+
+.textarea textarea:focus {
+	padding-top: 30px;
+	border: 1px solid var(--blue-2);
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--black);
+}
+
+.textarea textarea:focus ~ .textarea-title,
+.textarea textarea:not(:placeholder-shown).textarea-input:not(:focus) ~ .textarea-title {
+	top: 15px;
+	font-weight: normal;
+	font-size: 0.75rem;
+	line-height: 15px;
+	color: var(--black);
+}
+
+.textarea textarea:not(:placeholder-shown).textarea-input:not(:focus) {
+	padding-top: 30px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--black);
+}
+
+.textarea-disabled {
+	border: 1px solid var(--black-25) !important;
+	background-color: transparent !important;
+}
+
+.textarea-disabled + span {
+	color: var(--gray-3);
+	font-weight: 500;
+}

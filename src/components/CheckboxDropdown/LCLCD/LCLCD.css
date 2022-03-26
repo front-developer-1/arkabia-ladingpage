@@ -1,0 +1,93 @@
+.lclcd {
+	background: var(--white-90);
+	border-radius: 24px;
+	max-width: 760px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.lclcd-container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.lclcd-title {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.lclcd h2,
+.lclcd p {
+	margin: 0;
+	color: var(--gray-1);
+}
+
+.lclcd-bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.lclcd-first,
+.lclcd-second {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.lclcd-first .textfield {
+	width: 100%;
+}
+
+.lclcd-last {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: var(--black-05);
+	border-radius: 12px;
+	padding: 20px;
+}
+
+.lclcd-add-list {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.lclcd-add-list p span {
+	color: var(--black-25);
+}
+
+.lclcd-fileupload {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+@media (max-width: 730px) {
+	.lclcd {
+		
+	}
+
+	.lclcd-first {
+		flex-wrap: wrap;
+	}
+
+	.lclcd-second {
+		flex-wrap: wrap;
+	}
+
+	.lclcd-last {
+		flex-wrap: wrap;
+	}
+
+	.lclcd-fileupload {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,30 @@
+/* contedor principal */
+.city-country-display {
+	max-height: 28px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+	background-color: var(--white-50);
+	padding: 5px 10px;
+	border-radius: 12px;
+	
+}
+
+/* cuidad y pais */
+.city-country-display span {
+	color: var(--gray-1);
+}
+
+/* tamaño de la imagen */
+.city-country-display img {
+	
+}
+
+.city-country--image img {
+	width: 27px;
+	height: 13.5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

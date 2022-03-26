@@ -1,0 +1,36 @@
+.milestone-main {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.milestone-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.milestone-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.milestone-img {
+    display: flex
+}
+
+.milestone-add {
+    color: var(--blue-2);
+}
+
+.milestone-text-gray-1 {
+    color: var(--gray-1);
+}
+
+.milestone-text-gray-2 {
+    color: var(--gray-2);
+}

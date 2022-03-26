@@ -1,0 +1,45 @@
+.registerMail-container {
+    /* max-width: 37.5rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.registerMail-input {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.registerMail-color {
+    color: var(--gray-1);
+}
+
+.registerMail-container .registerMail-input .textfield input {
+    height: 45px;
+    width: 250px;
+}
+
+.registerMail-container .registerMail-input button{
+    height: 45px;
+    min-width: 250px;
+}
+
+@media (max-width: 550px) {
+    .registerMail-input {
+        flex-direction: column;
+    }
+
+    .registerMail-container .registerMail-input, .registerMail-container .registerMail-input .textfield, .registerMail-container .registerMail-input .textfield input {
+        width: 100%;
+    }
+    
+    .registerMail-container .registerMail-input button{
+        min-width: none;
+        width: 100%;
+    }
+
+}

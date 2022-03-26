@@ -1,0 +1,19 @@
+.dashboardElementsRow-container {
+    /* max-width: 57.5rem; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media (max-width: 900px) { 
+
+    .dashboardElementsRow-container {
+        width: auto;
+        overflow: scroll;
+        overflow-y: hidden;
+        padding: 10px;
+    }
+
+}

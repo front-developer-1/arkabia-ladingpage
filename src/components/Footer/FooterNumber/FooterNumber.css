@@ -1,0 +1,36 @@
+.footerNumber-main {
+    max-width: 351.67px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footerNumber-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding: 5px;  
+    
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+    
+    color: var(--gray-1);
+}
+
+.footerNumber-active {
+    background: var(--white-75);
+    border-radius: 12px;
+}
+
+@media (max-width: 430px) {
+    .footerNumber-main  {
+        gap: 0px;
+    }
+}

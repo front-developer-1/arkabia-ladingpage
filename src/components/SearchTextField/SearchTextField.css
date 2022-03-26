@@ -1,0 +1,40 @@
+.searchTextField-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    max-width: 400px;
+    backdrop-filter: blur(40px);
+    border-radius: 48px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+}
+
+.searchTextField-input {
+    background: transparent;
+    border: transparent;
+    width: 100%;
+    color: var(--black-50);
+}
+
+.searchTextField-input:focus {
+    outline: none;
+}
+
+.searchTextField-min {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    backdrop-filter: blur(40px);
+    border-radius: 48px;
+    background: var(--background);
+} 
+
+.searchTextField-min div img {
+    width: 16px;
+    height: 16px;
+}

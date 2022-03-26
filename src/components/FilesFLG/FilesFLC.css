@@ -1,0 +1,52 @@
+.filesFLC-container {
+    max-width: 30.063rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.filesFLC-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.filesFLC-title {
+    text-align: center;
+}
+
+.filesFLC-color {
+    text-align: center;
+    color: var(--gray-1);
+}
+
+.filesFLC-files {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filesFLC-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-2);
+}
+
+@media (max-width: 480px) {
+
+    .filesFLC-header{
+        padding: 0px 8px;
+    }
+
+    .big-header {
+        font-size: 1.8rem;
+    }
+
+    .big-subheader {
+        font-size: 1rem;
+    }
+
+}

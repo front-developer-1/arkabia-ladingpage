@@ -1,0 +1,54 @@
+.arrivalDelivery-main {
+    max-width: 52.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    backdrop-filter: blur(40px);
+	border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+}
+
+.arrivalDelivery-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.arrivalDelivery-row .textfield {
+    width: 100%;
+}
+
+.arrivalDelivery-button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.tagButton-main {
+    padding: 5px 15px;
+}
+
+.tagButton-main div {
+    font-family: 'Faktum-Medium';
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.arrivalDelivery-button button div {
+    display: flex;
+}
+
+.arrivalDelivery-text {
+    color: var(--gray-1);
+}
+
+@media (max-width: 720px) {
+
+    .arrivalDelivery-row {
+        flex-direction: column;
+    }
+
+}

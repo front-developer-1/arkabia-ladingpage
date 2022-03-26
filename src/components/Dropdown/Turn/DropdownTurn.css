@@ -1,0 +1,157 @@
+.dropdownTurn {
+    width: fit-content;
+    position: relative; 
+  }
+  
+.dropdownTurn-list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+  
+.dropdownTurn-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background: var(--background);
+  border-image-source: var(--border-image-source);
+  padding: 5px 15px;
+  border-radius: 24px;
+  backdrop-filter: blur(40px);
+}
+
+.dropdownTurn-select-dark {
+  background-color: var(--gray-1);
+}
+
+.selectturn-textWhite {
+  color: var(--white) !important;
+}
+
+.selectTurn-img {
+  height: 30px;
+  width: 30;
+}
+
+.selectTurn-hidden {
+  display: none;
+}
+
+.selectturn-textColor {
+  color: var(--gray-1);
+}
+  
+  .dropdownTurn-select__click {
+    /* background: var(--white-50); */
+    border: 1px solid var(--blue-2);
+    box-sizing: border-box;
+    border-radius: 12px 12px 0px 0px;
+  }
+  
+  .dropdownTurn-list {
+    display: none;
+  }
+  
+  .dropdownTurn-show {
+    display: block;
+  }
+  
+  .dropdownTurn-list__item {
+    padding: 5px 15px;
+    background: var(--white-50);
+    backdrop-filter: blur(40px);
+    display: flex;
+    align-items: center;
+    font-family: 'Faktum';
+    gap: 10px;
+  }
+  
+  .itemTurn-img {
+      height: 30px;
+      width: 30px;
+  }
+
+  .dropdownTurn-list__item:last-child {
+    border-radius:  0px 0px 12px 12px;
+  }
+  
+  .dropdownTurn-list__item:hover {
+    background: var(--black-05);
+    backdrop-filter: blur(40px);
+  }
+  
+  .select-title {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(20px, 50%);
+  }
+  
+  .move-text {
+    transform: translate(0, 50%);
+    font-family: 'Faktum-Medium';
+  }
+  
+  
+  .dropdown-select-icon {
+    padding: 15px 20px;
+    border-radius: 12px;
+    background: var(--black-05);
+    backdrop-filter: blur(40px);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    gap: 10px;
+    font-family: 'Faktum';
+  }
+  
+  .dropdown__icon div img{
+    height: 24px;
+    width: 24px;
+  }
+  
+  .dropdown__content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .select-title-icon {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(55px, 50%);
+  }
+  
+  .move-text-icon {
+    transform: translate(0px, 50%);
+    font-family: 'Faktum-Medium';
+  }
+  
+  .dropdown-select__click-icon {
+    background: var(--white-50);
+    border: 1px solid var(--blue-2);
+    padding: 14px 19px !important;
+    box-sizing: border-box;
+    border-radius: 12px 12px 0px 0px;
+  }
+  
+  .dropdownTurn-no-display {
+    display: none;
+  }
+  
+  .dropdownTurn-no-transform {
+    transform: none;
+  }
+  
+  

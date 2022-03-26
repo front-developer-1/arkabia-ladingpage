@@ -1,0 +1,134 @@
+.messageTopBar-main {
+    max-width: 52.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.messageTopBar-users {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.messageTopBar-user_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.messageTopBar-colorText {
+    color: var(--black-75);
+}
+
+.messageTopBar-user_main-mobile {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    border-radius: 24px;
+}
+
+.messageTopBar-user_main-mobile img {
+    display: flex;
+} 
+
+.messageTopBar-user_main-mobile {
+    display: none;
+}
+
+.messageTopBar-user_main--imageIcon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-1);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    border-radius: 24px;
+}
+
+.messageTopBar-user_main--imageIcon img {
+    display: flex;
+}
+
+.messageTopBar-user_main--imageIcon {
+    display: none;
+}
+
+.messageTopBar-user--typeChat {
+    height: 100%;
+    padding: 5px 13px;
+    display: flex;
+    align-items: center;
+    background: var(--white-50);
+    backdrop-filter: blur(40px);
+    border-radius: 24px;
+
+
+}
+
+.messageTopBar-user--typeChat {
+    display: none;
+}
+
+/* tablet */
+@media (max-width: 690px) { 
+
+
+    .messageTopBar-user_main .useractive {
+        display: none;
+    }
+
+    .messageTopBar-colorText {
+        display: none;
+    }
+
+    .messageTopBar-user_main-mobile, .messageTopBar-user_main--imageIcon, messageTopBar-user--typeChat {
+        display: flex;
+    }
+    
+    .messageTopBar-users {
+        gap: 10px;
+    }
+
+    .messageTopBar-user-active .dropdownTurn .dropdownTurn-select {
+        padding: 6px 8px;
+    }
+
+    .messageTopBar-user-active .dropdownTurn .dropdownTurn-select .selectTurn-img {
+        width: 18px;
+        height: 18px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .messageTopBar-main {
+        gap: 10px;
+    }
+
+    .messageTopBar-users .searchTextField-min {
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+    }
+}
+
+/**/
+@media (max-width: 390px) {
+    .messageTopBar-users {
+        gap: 10px;
+    }
+
+    .messageTopBar-colorText {
+        display: none;
+    }
+}

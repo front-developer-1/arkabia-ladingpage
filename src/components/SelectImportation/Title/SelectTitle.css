@@ -1,0 +1,23 @@
+.selectTitle {
+	max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.selectTitle-textfield {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.selectTitle p {
+	margin: 0;
+	color: var(--gray-1);
+}
+
+.selectTitle-textfield p {
+	margin: 0;
+	color: var(--gray-3);
+	align-self: flex-end;
+}

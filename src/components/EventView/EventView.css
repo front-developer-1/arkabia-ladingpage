@@ -1,0 +1,22 @@
+.eventView-container {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.eventView-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eventCard-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.eventCard-colorText {
+    color: var(--gray-1);
+}

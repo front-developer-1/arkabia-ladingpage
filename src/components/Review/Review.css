@@ -1,0 +1,47 @@
+.review {
+	backdrop-filter: blur(40px);
+	border-radius: 12px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.review-top {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.review-user-img {
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+}
+
+.review-bot {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.review-bot-likes {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.review-bot-likes span {
+	color: var(--gray-1);
+}
+
+.review-top h1 {
+	margin: 0;
+	flex: 1;
+	color: var(--gray-1);
+}
+
+.review-mid p {
+	margin: 0;
+	color: var(--gray-1);
+}

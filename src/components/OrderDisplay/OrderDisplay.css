@@ -1,0 +1,148 @@
+.order-display {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 30px 20px;
+	backdrop-filter: blur(40px);
+	border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+}
+
+.order-display-top {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.order-display-header {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.order-display-ratings {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.order-display-social {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 20px;
+}
+
+.order-display-mid {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.order-display-main-img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.order-display-img {
+	flex: 1;
+	border-radius: 12px;
+	min-width: 250px;
+}
+
+.order-display-mini-imgs {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+	padding: 0 20px;
+}
+
+.order-display-mini-imgs img {
+	width: 120px;
+	height: 59px;
+	border-radius: 12px;
+}
+
+.order-display-bot {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.order-display h1 {
+	margin: 0;
+	color: var(--gray-1);
+}
+
+.order-display p {
+	margin: 0;
+	color: var(--gray-1);
+}
+
+.order-display-main-btn {
+	width: 100%;
+}
+
+.order-display-main-btn button {
+	width: 100%;
+}
+
+.order-display-header-mobile {
+	display: none;
+}
+
+.order-display-images-mobile {
+	display: none;
+}
+
+@media (max-width: 428px) {
+	.order-display-header,
+	.order-display-main-btn,
+	.order-display-main-img,
+	.order-display-mini-imgs {
+		display: none;
+	}
+
+	.order-display-images-mobile {
+		display: flex;
+		gap: 11px;
+		overflow: auto;
+	}
+
+	.order-display-images-mobile::-webkit-scrollbar {
+		width: 0;
+	}
+
+	.order-display-images-mobile img {
+		width: 280px;
+		height: 130px;
+		border-radius: 12px;
+	}
+
+	.order-display-header-mobile {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+	}
+
+	.order-display-header-mobile h1 {
+		margin: auto;
+	}
+
+	.order-mobile-subheader {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

@@ -1,0 +1,49 @@
+/* contenedor principal */
+.subheader {
+	color: var(--black-50);
+	cursor: pointer;
+	position: relative;
+}
+
+.subheader:hover {
+	color: var(--black);
+}
+
+.subheader::before {
+	content: "";
+	width: 20px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: var(--black);
+	position: absolute;
+	left: calc(50% - 20px/2);
+	bottom: 0%;
+	margin-bottom: -10px;
+
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 250ms ease-in;
+}
+
+.subheader:hover::before {
+	transform: scaleX(1);
+}
+
+.subheader-clicked {
+	color: var(--black);
+	position: relative;
+}
+
+.subheader-clicked::before {
+	content: "";
+	width: 20px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: var(--black);
+	position: absolute;
+	left: calc(50% - 20px/2);
+	bottom: 0%;
+	margin-bottom: -10px;
+	transition: none;
+	transform: none;
+}

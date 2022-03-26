@@ -1,0 +1,33 @@
+.multimedia-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.multimedia-text {
+    color: var(--black-90);
+}
+
+.multimedia-row {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.multimedia-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    color: var(--gray-3)
+}
+
+@media (max-width: 430px) {
+    .multimedia__6 {
+        display: none;
+    }
+
+}

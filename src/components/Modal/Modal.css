@@ -1,0 +1,70 @@
+.modal-main {
+    position: fixed;
+    z-index: 1;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.15); /* Black w/ opacity */
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.modal-container {
+    max-width: 53.75rem;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(40px);
+    border-radius: 24px;
+}
+
+.modal__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.modal__heade-left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.modal-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-logo div {
+    display: flex;
+}
+
+.modal-logo div img {
+    width: 37px;
+    height: 26px;
+}
+
+.modal-header__text {
+
+}
+
+@media (max-width: 470px) { 
+    .modal-container {
+        padding: 15px;
+    }
+}

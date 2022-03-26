@@ -1,0 +1,29 @@
+.supplierInvoceTranslation-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.supplierInvoceTranslation-text {
+    color: var(--gray-1);
+}
+
+.supplierInvoceTranslation-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.supplierInvoceTranslation-width {
+    width: 24.375rem !important;
+}
+
+@media (max-width: 840px) { 
+    .supplierInvoceTranslation-row  {
+        flex-direction: column;
+    }
+
+    .supplierInvoceTranslation-width {
+        width: 100% !important;
+    }
+}

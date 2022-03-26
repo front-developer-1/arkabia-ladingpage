@@ -1,0 +1,186 @@
+/* clase principal de la pagina */
+.homePage-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/** clase contenedora del cuerpo de la pagina */
+.homePage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+  padding: 0px 40px;
+  margin: 0px 40px;
+}
+
+/** clase contenedora de las secciones  */
+.homePage-container__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/** titulo principal de la pagina */
+.homePage-section__title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+/** contenedor de las secciones */
+.homePage-content {
+    max-width: 1280px;
+    max-height: 940px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(40px);
+    border-radius: 24px;
+
+}
+
+/* clase contenedor del los submenu
+y descripcion de las secciones */
+.homePage-subheader {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*  clase que contiene a las sub menus */
+.homePage-subheader__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* descripcion de cada seccion */
+.homePage-subheader__detail {
+    text-align: center;
+}
+
+/* re asigando tamaño de letra los sub header */
+.homePage-content .homePage-subheader .homePage-subheader__title .subheader {
+    font-size: 1rem;
+}
+
+/* contenedor de las secciones 
+contenido dinamico */
+.homePage-section-content{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden
+}
+
+/* sobre escribiendo width del footer*/
+.homePage-main .footer {
+    width: 100%;
+}
+
+/* hidden scroll  */
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* modal suscribirte*/
+.homePage-main .modal-main .modal-container .modal__header{
+    align-items: flex-start;
+}
+
+
+/* media query desktop*/
+@media (max-width: 1200px) {
+   
+    .homePage-row {
+        flex-direction: column;
+        gap: 90px;
+    }
+}
+
+
+/* media query laptop */
+@media (max-width: 880px) {
+
+    .homePage-container { 
+        padding: 0px 20px;
+        margin: 0px 20px;
+    }
+
+    .homePage-section__title .mega-header {
+        font-size: 2rem;
+    }
+
+    .homePage-section__title .big-subheader{
+        font-size: 1rem;
+    } 
+
+    .homePage-content .homePage-subheader .homePage-subheader__detail {
+        font-size: 0.9rem;
+    }
+
+    .homePage-content {
+        padding: 30px 20px;
+    }
+
+}  
+
+/* media query tablet */
+@media (max-width: 680px) { 
+
+    .homePage-container {
+        gap: 20px;
+    }
+
+    /* aling center text subheader*/
+    .homePage-content .homePage-subheader .homePage-subheader__title .subheader {
+        text-align: center;
+    }
+
+    .homePage-content .homePage-subheader .homePage-subheader__detail {
+        font-size: 13px;
+    } 
+
+}
+
+@media (max-width: 550px) { 
+
+    .homePage-container { 
+        padding: 0px 10px;
+    }
+
+    .homePage-content .homePage-subheader .homePage-subheader__title .subheader {
+        font-size: 12px;
+    }
+
+    .homePage-content .homePage-subheader .homePage-subheader__detail {
+        font-size: 11px;
+    } 
+
+    .homePage-subheader__title {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 425px) {  
+    .homePage-content {
+        padding: 20px;
+    }
+    
+    .homePage-container { 
+        padding: 0px;
+    }
+}
+

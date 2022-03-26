@@ -1,0 +1,166 @@
+* {
+	/* font-family: Faktum; */
+	--white: #FFFFFF;
+	--black: #000000;
+
+	/* Grays */
+	--gray-1: #333333;
+	--gray-2: #4F4F4F;
+	--gray-3: #828282;
+	--gray-4: #BDBDBD;
+	--gray-5: #E0E0E0;
+	--gray-6: #F2F2F2;
+	/* Whites */
+	--white-90: rgba(255, 255, 255, 0.9);
+	--white-75: rgba(255, 255, 255, 0.75);
+	--white-50: rgba(255, 255, 255, 0.50);
+	--white-25: rgba(255, 255, 255, 0.25);
+	--white-15: rgba(255, 255, 255, 0.15);
+	--white-05: rgba(255, 255, 255, 0.05);
+	/* Blacks */
+	--black-90: rgba(0, 0, 0, 0.9);
+	--black-75: rgba(0, 0, 0, 0.75);
+	--black-50: rgba(0, 0, 0, 0.50);
+	--black-25: rgba(0, 0, 0, 0.25);
+	--black-15: rgba(0, 0, 0, 0.15);
+	--black-05: rgba(0, 0, 0, 0.05);
+	/* Main Colors */
+	--blue-2: #2D9CDB;
+	--red: #EB5757;
+	--yellow: #F7E246;
+	--green-2: #27AE60;
+	--online: #8BEA41;
+
+	/* Glass Morph */
+	--background: linear-gradient(110.97deg, rgba(255, 255, 255, 0.5) -4.87%, rgba(255, 255, 255, 0) 103.95%);
+	--border-image-source: linear-gradient(121.86deg, #FFFFFF 5.23%, rgba(255, 255, 255, 0) 41.9%);
+	
+}
+
+.app {
+	background-image: url("bg-img.png");
+	background-size: cover;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.mega-header {
+	font-family: 'Faktum-SemiBold';
+	font-style: normal;
+	font-size: 3.125rem;
+	line-height: 63px;
+	color: var(--black);
+}
+
+.big-header {
+	font-family: 'Faktum-SemiBold';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2.125rem;
+	line-height: 43px;
+	color: var(--black);
+}
+
+.big-subheader {
+	font-family: 'Faktum-Medium';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.25rem;
+	line-height: 25px;
+	color: var(--black);
+}
+
+.medium-header {
+	font-family: 'Faktum-SemiBold';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.625rem;
+	line-height: 33px;
+	color: var(--black);
+}
+
+.small-header {
+	font-family: 'Faktum-SemiBold';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.375rem;
+	line-height: 28px;
+	color: var(--black);
+}
+
+.small-subheader {
+	font-family: 'Faktum';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 25px;
+	color: var(--black);
+}
+
+.small-bold {
+	font-family: 'Faktum-SemiBold';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 23px;
+	color: var(--black);
+}
+
+.paragraph-header {
+	font-family: 'Faktum-Medium';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 20px;
+	color: var(--black);
+}
+
+.paragraph {
+	font-family: 'Faktum';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 20px;
+	color: var(--black);
+}
+
+.smalltext-header {
+	font-family: 'Faktum-Medium';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 18px;
+	color: var(--black);
+}
+
+.smalltext {
+	font-family: 'Faktum';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 18px;
+	color: var(--black);
+}
+
+.tinytext-header {
+	font-family: 'Faktum-Medium';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.75rem;
+	line-height: 15px;
+	color: var(--black);
+}
+
+.tinytext {
+	font-family: 'Faktum';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.75rem;
+	line-height: 15px;
+	color: var(--black);
+}

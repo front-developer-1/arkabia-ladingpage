@@ -1,0 +1,37 @@
+.eventCard-container {
+    backdrop-filter: blur(40px);
+	border-radius: 1px 4px 4px 1px;
+    background: var(--background);
+    border-image-source: var(--border-image-source);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.eventCard-marker {
+    width: 7px;
+    border-radius: 12px;
+}
+
+.eventCard-body {
+    padding: 5px 0px;
+}
+
+.eventCard-marker__high {
+    background: #EB5757;
+}
+
+.eventCard-marker__middle {
+    background-color: var(--yellow);
+}
+
+.eventCard-marker__low {
+    background-color: var(--blue-2);
+}
+
+
+
+.eventCard-textColor {
+    color: var(--gray-1);
+}
+

@@ -1,0 +1,28 @@
+.calendar-container {
+    max-width: 360px;
+    min-width: 280px;
+    /* height: 373px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background: var(--background);
+    backdrop-filter: blur(40px);
+    border-image-source: var(--border-image-source);
+    border-radius: 12px;
+}
+
+.calendar-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 450px) {
+    .calendar-container {
+        padding: 15px;
+        gap: 0px;  
+    }   
+}

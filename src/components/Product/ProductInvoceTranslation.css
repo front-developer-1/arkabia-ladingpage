@@ -1,0 +1,54 @@
+.productInvoceTranslation-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productInvoceTranslation-text {
+    color: var(--gray-1);
+}
+
+
+.productInvoceTranslation-row-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+
+.productInvoceTranslation-product-text {
+    width: 11.094rem !important;
+}
+
+.productInvoceTranslation-field {
+    width: 22.1rem !important;
+}
+
+.productInvoceTranslation-sizeText {
+    font-size: 0.75rem;
+}
+
+.productInvoceTranslation-trashIcon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 840px) { 
+    .productInvoceTranslation-row-product {
+        flex-direction: column;
+    }
+    
+    .productInvoceTranslation-product-text {
+        width: 100% !important;
+    }
+
+    .productInvoceTranslation-field {
+        width: 100% !important;
+    }
+
+    .productInvoceTranslation-row-product .textfield {
+        width: 100%;
+    }
+}

@@ -1,0 +1,65 @@
+.channelControl-main {
+    max-width: 52.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    backdrop-filter: blur(40px);
+	border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+}
+
+.channelControl-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.channelControl-status-green {
+    width: 20px;
+    height: 20px;
+    background: #00FF0A;
+    border: 2px solid #00E709;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0px 10px;
+}
+
+.channelControl-status-amber {
+    width: 20px;
+    height: 20px;
+    background: #FFCA63;
+    border: 2px solid #FF9B66;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0px 10px;
+}
+
+.channelControl-status-red {
+    width: 20px;
+    height: 20px;
+    background: #FF0000;
+    border: 2px solid #921414;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0px 10px;
+    border-radius: 20px;
+}
+
+.channelControl-colorText {
+    color: var(--gray-1);
+}
+
+.channelControl-main button {
+    font-family: 'Faktum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0px;
+    color: var(--gray-1);
+}

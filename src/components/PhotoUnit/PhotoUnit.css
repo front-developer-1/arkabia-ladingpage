@@ -1,0 +1,63 @@
+.photo-unit {
+	width: 50px;
+	height: 50px;
+	border-radius: 8px;
+	background: var(--black-05);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.photo-unit-cloud:hover {
+	background: var(--black-50);
+}
+
+.photo-unit span {
+	color: var(--gray-3);
+}
+
+.photo-unit-picture {
+	position: relative;
+}
+
+.photo-unit-picture-img {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	border-radius: inherit;
+} 
+
+.photo-unit-picture-close {
+	position: absolute;
+	z-index: 1;
+	left: 85%;
+	top: -2%;
+}
+
+.photo-unit-picture-hover-bg {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	border-radius: inherit;
+	background: var(--white-50);
+	backdrop-filter: blur(4px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.photo-unit-picture-hover-bg {
+	display: none;
+}
+
+.photo-unit-picture:hover > div {
+	display: flex;
+}
+
+@media (max-width: 400px) {
+	.photo-unit {
+		width: 34px;
+		height: 34px;
+	}
+}

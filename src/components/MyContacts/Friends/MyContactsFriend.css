@@ -1,0 +1,42 @@
+.myContactsFriend-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.myContactsFriend-row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.myContactsFriend-row .useractive img {
+    width: 70px;
+    height: 70px;
+}
+
+.myContactsFriend-colorTItle {
+    color: var(--gray-1);
+}
+
+.myContactsFriend-colorText {
+    color: var(--gray-2);
+}
+
+.myContactsFriend-edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width: 440px) {
+    
+    .myContactsFriend-container {
+        gap: 15px;
+        padding: 0px 10px;
+    }
+
+}

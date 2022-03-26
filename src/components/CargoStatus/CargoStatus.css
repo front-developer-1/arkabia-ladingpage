@@ -1,0 +1,21 @@
+.cargoStatus-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.cargoStatus-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.cargoStatus-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.cargoStatus-color {
+    color: var(--gray-1);
+}

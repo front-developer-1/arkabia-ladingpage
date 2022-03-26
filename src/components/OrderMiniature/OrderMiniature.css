@@ -1,0 +1,127 @@
+.order-minuature-main {
+    max-width: 264px;
+    max-height: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+}
+
+.order-minuature-img {
+    max-height: 150px;
+    max-width: 266px;
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+     
+}
+
+.order-minuature-text{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.order-minuature-title {
+    max-width: 14.375rem;
+    color: var(--gray-1);
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.order-minuature-description{
+    color: var(--gray-1);
+}
+
+.online-company{
+    width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: var(--green-2);
+}
+
+.order-minuature-rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.order-miniature-line{
+    border-bottom: var(--black15);
+    /* width: 250px; */
+   margin: 0px 9px;
+}
+
+.order-miniature-share {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px 0px 11px 0px;
+}
+
+.order-miniature-social{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.order-miniature-price {
+    color: var(--gray-1);
+}
+
+.order-miniature-padding-text {
+    padding: 0px 10px;
+}
+
+.order-miniature-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.order-minuature-button-single {
+    width: 100%;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(40px);
+    border-radius: 0px 0px 12px 12px;
+    color: white;
+    text-align: center;
+}
+
+.order-minuature-button-single-green {
+    background-color: var(--green-2);
+}
+
+.order-minuature-button-left {
+    width: 50%;
+    padding: 10px 30px;
+    color: white;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(40px);
+    border-radius: 0px 0px 0px 12px;
+}
+
+.order-minuature-button-rigth {
+    width: 50%;
+    padding: 10px 30px;
+    color: white;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(40px);
+
+    border-radius: 0px 0px 12px 0px;    
+
+
+}

@@ -1,0 +1,33 @@
+.import-timeline {
+	display: flex;
+	align-items: center;
+}
+
+.import-timeline-stage {
+	background-color: var(--white-50);
+	padding: 5px 24px;
+	border-radius: 24px;
+	color: var(--gray-1);
+}
+
+.import-timeline-stage h2 {
+	margin: 0;
+}
+
+.import-timeline-last-stage {
+	background-color: var(--white-50);
+	padding: 10px;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+}
+
+.import-timeline-connection {
+	background: var(--white-50);
+	transform: matrix(1, 0, 0, -1, 0, 0);
+	width: 24px;
+	height: 8px;
+}

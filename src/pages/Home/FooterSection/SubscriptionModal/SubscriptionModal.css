@@ -1,0 +1,25 @@
+.subscriptionModal-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.subscriptionModal-container .textfield {
+    width: 60%;
+}
+
+@media (max-width: 630px) { 
+    .subscriptionModal-container {
+        flex-direction: column;
+    }   
+
+    .subscriptionModal-container .textfield {
+        width: 100%;
+    }
+
+    .subscriptionModal-container .custom-button {
+        width: 100%;
+    }
+
+}

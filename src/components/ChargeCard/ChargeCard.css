@@ -1,0 +1,67 @@
+.chargeCard-main {
+    max-width: 24.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+
+    background: var(--background);
+    border-image-source: var(--border-image-source);
+    backdrop-filter: blur(40px);
+    border-radius: 24px;
+    
+}
+
+.changeCard-header {
+    gap: 5px;
+}
+
+.chargeCard-phases-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.changeCard-phase-number{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--white-50);
+    backdrop-filter: blur(40px);
+    border-radius: 40px;    
+}
+
+.changeCard-phase-active {
+    background-color: var(--black-75);
+    border: 5px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px var(--black-50);
+}
+
+.chargeCard-line {
+    margin-left: 35px;
+    height: 20px;
+    width: 3px;
+}
+
+.changeCard-text-inactive {
+    color: var(--black-75);
+}
+
+.changeCard-black-icon img {
+    width: 22px;
+}
+
+.changeCard-white-icon img  {
+   width: 35px;
+}
+
+/* resposive */
+@media (max-width: 430px) {
+    .chargeCard-main {
+        padding: 10px 20px;
+    }
+}

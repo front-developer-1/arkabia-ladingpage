@@ -1,0 +1,329 @@
+.panelHomePage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.panelHomePage-circleTab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.panelHomePage-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.panelHomePage-orders {
+    max-width: 880px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.panelHomePage-orders__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.panelHomePage-orders_search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.panelHomePage-orders-filters {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.dashboardElements-container {
+    width: 840px;
+}
+
+.panelHomePage-orders__desactive {
+    opacity: 0.5;
+    pointer-events:none;
+}
+
+.panelHomePage-calendar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+
+}
+
+ .panelHomePage-orders-filters .filterSelectorMiniature-main  {
+    min-height: 30px;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+.panelHomePage-orders-filters .searchTextField-min {
+    width: 36.59px;
+    height: 30px;
+    padding: 2px 3px;
+    border-radius: 24px;
+}
+
+/* buton + agreagar importacion*/
+.panelHomePage-orders_search .custom-button  {
+    max-width: 253px;
+    width: 100%;
+    height: 30px;
+    padding: 5px 40px;
+    border-radius: 24px;
+}
+
+
+
+/**/
+.panelHomePage-orders_search .searchTextField-container {
+    display: none;
+}
+
+.panelHomePage-orders .dashboardElements-mobile-container {
+    display: none;
+}
+
+
+/* Desktop */
+@media (min-width: 1441px) {
+    .dashboardElements-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1440px) { 
+    
+    .panelHomePage-container{
+        justify-content: center;
+    }
+
+    .panelHomePage-orders {
+        max-width: 800px;   
+    }
+    
+    .dashboardElements-container {
+        width: 800px;
+    }
+
+    .panelHomePage-orders-filters .filterSelectorMiniature-main {
+        gap: 20px;
+    }
+
+    .panelHomePage-orders-filters .custom-button {
+        padding: 5px 10px;
+    }
+
+}
+
+@media (max-width: 1380px) {
+    .panelHomePage-orders {
+        max-width: 760px;
+        
+    }
+    
+    .dashboardElements-container {
+        width: 760px;
+    }
+ }
+
+ @media (max-width: 1360px) {
+    .panelHomePage-orders {
+        max-width: 720px;
+        
+    }
+    
+    .dashboardElements-container {
+        width: 720px;
+    }
+ }
+
+ @media (max-width: 1320px) {
+
+    .panelHomePage-orders {
+        max-width: 6800px;
+       
+    }
+    
+    .dashboardElements-container {
+        width: 680px;
+    }
+ }
+
+ @media (max-width: 1300px) {
+    .panelHomePage-orders {
+        max-width: 640px;
+        
+    }
+    
+    .dashboardElements-container {
+        width: 640px;
+    }
+
+    .panelHomePage-orders_search .custom-button { 
+        padding: 5px 5px;
+    }
+ }
+
+@media (max-width: 1240px) {
+    .panelHomePage-container {
+        gap: 20px;
+    }
+
+    .panelHomePage-orders, .dashboardElements-container {
+        max-width: 600px;    
+    }
+    
+    .panelHomePage-orders_search .custom-button { 
+        font-size: 13px;
+    }
+
+    .dashboardElementsRow-container .elementRow-container 
+    .elementRow-row .elementRow-row__detail .elementRow-text {
+        max-width: 90px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .panelHomePage-orders, .dashboardElements-container {
+        max-width: 540px;    
+    }
+    
+    .panelHomePage-orders-filters, .panelHomePage-orders_search {
+        gap: 0px;
+    }
+
+    .panelHomePage-orders_search .custom-button { 
+        font-size: 12px;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+    .panelHomePage-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panelHomePage-orders .dashboardElements-mobile-container {
+        display: flex;
+    }
+
+    .panelHomePage-container .panelHomePage-orders, .panelHomePage-container 
+    .panelHomePage-orders .dashboardElements-container {
+        max-width: 880px;
+        width: 100%;
+
+    }
+
+    .panelHomePage-container .panelHomePage-orders, .panelHomePage-container 
+    .panelHomePage-orders  {
+        overflow-y: scroll;
+        max-height: 720px;
+    }
+
+    .panelHomePage-orders_search .custom-button { 
+        font-size: 1rem;
+    }
+    
+    .panelHomePage-orders_search .panelHomePage-orders-filters, .panelHomePage-orders_search {
+        gap: 10px;
+    }
+
+    .panelHomePage-orders  .dashboardElements-container {
+        display: none;
+    }
+
+    .panelHomePage-orders__nav {
+        justify-content: center;
+    }
+
+    .panelHomePage-circleTab {
+        display: none;
+    }
+
+}
+
+@media (max-width: 780px) {  
+
+    .panelHomePage-calendar {
+        align-items: center;
+    }
+
+    .panelHomePage-orders-filters .filterSelectorMiniature-main {
+        width: fit-content;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .panelHomePage-orders_search {
+        gap: 20px;
+    }
+
+    .panelHomePage-orders-filters, .panelHomePage-orders_search .custom-button  {
+        display: none;
+    }   
+
+    .panelHomePage-orders_search .searchTextField-container {
+        display: flex;
+    }
+
+    .panelHomePage-orders_search .filterButton-container {
+        display: flex;
+        max-width: 70px;
+    }
+
+    .panelHomePage-orders_search .searchTextField-container {
+        max-width: 520px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    .panelHomePage-orders-filters .searchTextField-min {
+        display: none;
+    }
+
+    .panelHomePage-orders__nav  {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .panelHomePage-orders-filters .filterSelectorMiniature-main {
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+    .panelHomePage-orders_search .custom-button { 
+        max-width: 100%;
+    }
+
+}  

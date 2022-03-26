@@ -1,0 +1,39 @@
+.container-row {
+	max-width: 730px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 10px 20px 10px 10px;
+	border-radius: 12px;
+}
+
+.container-row-info,
+.container-row-textfields {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.container-row-list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.container-row-trash {
+	cursor: pointer;
+}
+
+@media (max-width: 375px) {
+	.container-row-info {
+		flex-wrap: wrap;
+	}
+
+	.container-row-textfields {
+		flex-wrap: wrap;
+	}
+
+	.container-row-trash {
+		align-self: baseline;
+	}
+}

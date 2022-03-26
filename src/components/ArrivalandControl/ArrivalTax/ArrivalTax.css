@@ -1,0 +1,15 @@
+.arrivalTax-main {
+    max-width: 52.5rem;
+    gap: 25px;
+}
+
+.arrivalTax-header {
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px 12px 0px 0px;
+    color: var(--gray-1);
+}
+
+.arrivalTax-bottom {
+   border-radius: 0px 0px 12px 12px;
+}

@@ -1,0 +1,29 @@
+.stepsImport-container {
+    max-width: 35.063rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.stepsImport-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.stepsImport-color {
+    color: var(--gray-1);
+}
+
+@media (max-width: 560px) { 
+
+    .stepsImport-header {
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+
+}

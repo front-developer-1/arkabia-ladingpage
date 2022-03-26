@@ -1,0 +1,37 @@
+.rating-slider {
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.15));
+}
+
+.rating-slider div {
+	width: 3.64px;
+	height: 20px;
+}
+
+.rating-slider-active {
+	background-color: var(--yellow);
+}
+
+.rating-slider-default {
+	background-color: var(--black-05);
+}
+
+.rating-slider-space {
+	background-color: var(--transparent);
+}
+
+.rating-slider div:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+.rating-slider div:last-child {
+	border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 380px) {
+	.rating-slider {
+		max-width: 109px;
+	}
+}

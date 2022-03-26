@@ -1,0 +1,9 @@
+.go-back-button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	height: 43px;
+	max-width: fit-content;
+	border: none;
+	background-color: transparent;
+}

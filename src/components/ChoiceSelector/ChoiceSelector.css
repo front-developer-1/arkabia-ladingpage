@@ -1,0 +1,30 @@
+.choice-selector-container {
+	display: flex;
+	align-items: center;
+}
+
+.choice-selector-container label {
+	cursor: pointer;
+	display: flex;
+}
+
+.choice-selector-container input[type="checkbox"] {
+	cursor: pointer;
+	opacity: 0;
+	position: absolute;
+}
+
+.choice-selector-container label::before {
+	content: '';
+	background: var(--white);
+	width: 13px;
+	height: 13px;
+	margin-right: 5px;
+	border-radius: 100%;
+	transform: translate(5%, 20%);
+	border: 2px solid var(--white);
+}
+
+.choice-selector-container input[type="checkbox"]:checked + label::before {
+	background-color: var(--green-2);
+}

@@ -1,0 +1,11 @@
+.circleTab-container {
+    width: 10px;
+    height: 10px;
+    border-radius: 48px;
+    background-color: var(--white-75);
+    cursor: pointer;
+}
+
+.circleTab__active {
+    background-color: var(--black-50);
+}

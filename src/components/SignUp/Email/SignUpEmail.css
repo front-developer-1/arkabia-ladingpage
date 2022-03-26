@@ -1,0 +1,30 @@
+.signUpEmail-container {
+    max-width: 29.438rem;
+    padding: 0px 20px   ;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.signUpEmail-divider {
+    position: static;
+    width: 300px;
+    height: 2px;
+    background-color: #C4C4C4;
+    border: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.signUpEmail-colorText {
+    color: var(--gray-1);
+    text-align: center;
+}
+
+@media (max-width: 470px) {
+
+    .signUpEmail-container {
+        padding: 0px;
+    }
+
+}

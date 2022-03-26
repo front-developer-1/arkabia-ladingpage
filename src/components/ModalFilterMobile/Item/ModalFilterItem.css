@@ -1,0 +1,60 @@
+.modalFilterItem-container {
+    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modalFilterItem-header-container {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modalFilterItem--color {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.modalFilterItem-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modalFilterItem-options--row {   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.modalFilterItem-options--cell {
+    margin-bottom: 10px;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    border-radius: 24px;
+
+    display: flex;
+
+    /* text style */
+    font-family: 'Faktum-Medium';
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.modalFilterItem-cell--check {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+/* modificando width y height del checkbox */
+.modalFilterItem-cell--check .checkbox-container input[type="checkbox"], 
+.modalFilterItem-cell--check .checkbox-container 
+label::before {
+    width: 24px;
+    height: 24px;
+}

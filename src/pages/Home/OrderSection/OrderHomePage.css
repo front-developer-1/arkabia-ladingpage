@@ -1,0 +1,207 @@
+.orderHomePage-container {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    gap: 30px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.orderHomePage-circleTab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.orderHomePage-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.orderHomePage-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ .orderHomePafe-tab__header { 
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+    align-items: center;
+ }
+
+ .orderHomePafe-tab-row {
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+     align-items: center;
+ }
+
+ .orderHomePage-tab__number {
+    background: var(--black-75);
+    border: 3px solid rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+    color: var(--white);
+    padding: 4.5px 9px;
+ }
+
+ .orderHomePage-colorText {
+     color: var(--gray-1);
+ }
+
+
+ .orderHomePage-tabs .filesFLC-container {
+    max-width: fit-content;
+ }
+
+ .orderHomePafe-with50 {
+    max-width: 400px;
+    width: 100%;
+ }
+
+ .orderHomePafe-with100 {
+    max-width: 840px;
+    width: 100%;
+ }
+
+
+ .orderHomePage-tabs .messageTopBar-main .messageTopBar-users .searchTextField-min {
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+ }
+
+ .orderHomePafe-tab__header .messages-btn {
+    padding: 10.5px 13px;
+ }
+
+.orderHomePage-content .orders-container {
+    max-width: 390px;
+    width: 100%
+}
+
+.orderHomePage-content .chargeCard-main {
+    max-width: 380px;
+    width: 100%
+}
+
+.orderHomePage-content .eventView-container {
+    max-width: 390px;
+    width: 100%
+}
+
+.orderHomePage-tabs .trackingShipping-container {
+    width: 100%;
+    justify-content: center;
+}
+
+.orderHomePage-tabs .trackingShipping-container .Maps__box {
+    width: 100%;
+}
+
+.orderHomePage-content .subMenuContent-container {
+    display: none;
+}
+
+.orderHomePage-show {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.orderHomePage-shows {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%; 
+}
+
+/* Desktop */
+@media (max-width: 1390px) {
+    .orderHomePage-show {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .orderHomePage-content {
+        gap: 20px;
+    }
+}
+
+ @media (max-width: 1170px) {
+
+    .orderHomePage-content .orders-container {
+        width: 100%;
+    }
+
+    .orderHomePage-content .chargeCard-main {
+        width: 100%;
+    }
+
+    .orderHomePage-content .eventView-container {
+        width: 100%;
+    }
+
+    .orderHomePafe-with50 {
+        width: fit-content;
+     }
+    
+     .orderHomePafe-with100 {
+         width: fit-content;
+     }
+
+ } 
+
+ /*Laptop*/
+ @media (max-width: 1024px) {
+ 
+    .orderHomePage-show, .orderHomePage-shows {
+        display: none;
+    }
+
+    .orderHomePage-tabs--multimedia {
+        display: none;
+    }
+
+    .orderHomePage-content .subMenuContent-container {
+        display: flex;
+    }
+
+
+ }
+
+ @media (max-width: 980px) {
+    .Maps__box {
+        width: auto;
+    }   
+
+ }
+
+
+ @media (max-width: 470px) { 
+    .orderHomePafe-tab__header .messages-btn {
+        display: none;
+    }
+    
+    .Maps__box {
+        width: 370px;
+     }
+ }
+
+ @media (max-width: 410px) {
+    .Maps__box {
+        width: 300px;
+        height: 300px;
+     }
+ } 

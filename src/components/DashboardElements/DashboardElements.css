@@ -1,0 +1,300 @@
+.dashboardElements-container {
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+}
+
+.dashboardElements-header {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px 12px 0px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.dashboardElements-header__border {
+    border-radius: 12px;
+}
+
+.dashboardElements-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboardElements-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardElements-date {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dashboardElements-table  {
+   width: 100%;
+}
+
+.dashboardElements-table .dashboardElementsRow-container {
+    padding: 0px;
+}
+
+.dashboardElements-table .dashboardElements-title .row {
+    padding: 5px 20px !important;
+}
+
+.dashboardElements-table .dashboardElements-title .row .row__item_1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dashboardElements-mobile-container {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+}
+.dashboardElements-mobile--header {
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--white);
+    border-radius: 24px 24px 0px 0px;
+}
+
+
+.dashboardElements-mobile--border {
+    border-radius: 24px;
+}
+
+.dashboardElements-mobile--header-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.dashboardElements-mobile--left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboardElements-mobile--header-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardElements-mobile--header-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.dashboardElements-mobile--header-bottom .cargoStatus-icon {
+    display: flex;
+}
+
+.dashboardElements-mobile--header-bottom .cargoStatus-icon img {
+    width: 22px;
+    height: 18px;
+}
+
+.dashboardElements-mobile-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardElements-mobile-content--title {
+    padding: 9px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #F2F2F2;
+}
+
+.dashboardElements-mobile-content--imgTag {
+    padding: 2px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    background: #D9D9D9;
+    backdrop-filter: blur(40px);
+    border-radius: 24px;
+}
+
+.dashboardElements-mobile-content--imgTag img {
+    width: 18px;
+    height: 18px;
+}
+
+.dashboardElements-mobile-content--imgTag div {
+    font-family: 'Faktum';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    color: var(--gray-1);
+}
+
+.dashboardElements-mobile-content--rows {
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 0px 0px 24px 24px;
+}
+
+.dashboardElements-mobile-content--rows-title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.dashboardElements-mobile-content--table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dashboardElements-mobile-content--table-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dashboardElements-mobile-content--table-cell {
+    width: 100%;
+}
+
+.dashboardElements-mobile-content--overflowText {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 94%;
+}
+
+.dashboardElements-colorTitle {
+    color: var(--gray-2);
+}
+
+.dashboardElements-colorText {
+    color: var(--gray-1)
+}
+
+/* tablet*/
+
+@media (max-width: 630px){
+
+    .dashboardElements-table .dashboardElements-title .row {
+        font-size: 12px;
+        gap: 0px;
+    }
+
+    .dashboardElements-table .dashboardElements-title .row .row__item_0{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .dashboardElements-table .dashboardElements-title .row .row__item_4 {
+        display: none;
+    }
+
+ }
+
+ @media (max-width: 600px){
+
+    .dashboardElements-mobile-container {
+        display: flex;
+    }
+
+    /* .dashboardElements-table .dashboardElements-title .row .row__values .row__values-item{
+        min-width: auto;
+    }
+
+    .dashboardElements-table .dashboardElements-title .row .row__item_0{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .dashboardElements-table .dashboardElements-title .row .row__title {
+        width: 100px;
+    } */
+
+ }
+
+ @media (max-width: 470px){
+
+    /* .dashboardElements-header {
+        padding: 5px;
+        gap: 10px;
+    }
+    
+    .dashboardElements__title{
+        font-size: 12px;
+    }
+
+    .dashboardElements__detail {
+        font-size: 10px;
+    }
+
+    .dashboardElements-date .tinytext {
+        font-size: 11px;
+    }
+
+    .dashboardElements-date .smalltext-header {
+        font-size: 12px;
+    }
+
+    .dashboardElements-date .tinytext-header {
+        font-size: 12px;
+    }
+
+    .dashboardElements-table .dashboardElements-title .row {
+        padding: 5px !important;
+    }
+    .dashboardElements-table .dashboardElements-title .row .row__values .row__values-item{
+        font-size: 10px;
+    }
+
+    .dashboardElements-table .dashboardElements-title .row .row__item_0 {
+        width: 70px;
+        justify-content: flex-start;
+    } */
+
+ }
+
+ @media (max-width: 430px){ 
+
+    /* .dashboardElements-header {
+        gap: 0px;
+    }
+
+    .dashboardElements-date {
+        gap: 5px
+    }
+
+    .dashboardElements-text {
+        gap: 5px;
+    } */
+
+ }

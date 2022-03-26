@@ -1,0 +1,23 @@
+.benefits-container {
+    max-width: 59.075rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+}
+
+.benefits-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.benefits-row__text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

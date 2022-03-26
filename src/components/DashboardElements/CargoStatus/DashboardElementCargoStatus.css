@@ -1,0 +1,17 @@
+.dashboardElementCargoStatus-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboardElementCargoStatus-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;    
+}
+
+.dashboardElementCargoStatus-colorText {
+    color: var(--gray-1);
+
+}

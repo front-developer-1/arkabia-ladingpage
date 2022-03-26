@@ -1,0 +1,58 @@
+.quotationPermitsComponent {
+	max-width: 800px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 24px;
+	background: var(--white-90);
+	border: 2px solid var(--red);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.quotationPermitsComponent-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.quotationPermitsComponent-container p {
+	color: var(--gray-1);
+}
+
+.quotationPermitsComponent-header {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.quotationPermitsComponent-title {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.quotationPermitsComponent-title p {
+	color: var(--gray-1) ;
+}
+
+.quotationPermitsComponent-title img {
+	cursor: unset !important;
+}
+
+.quotationPermitsComponent-header img {
+	cursor: pointer;
+}
+
+.quotationPermitsComponent-title p span {
+	color: var(--gray-3) !important;
+}
+
+.quotationPermitsComponent-container p span {
+	color: var(--red);
+}
+
+.quotationPermitsComponent p {
+	margin: 0;
+}

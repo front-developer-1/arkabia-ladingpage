@@ -1,0 +1,20 @@
+.tabs-main {
+	width: 100%;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 22px;
+}
+
+.tabs-header {
+	display: flex;
+    flex-direction: row;
+	justify-content: center;
+    gap: 40px;
+}
+
+.tabs-container {
+	margin: 20px 0px;
+	display: flex;
+	justify-content: center;
+}

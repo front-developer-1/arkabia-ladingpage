@@ -1,0 +1,51 @@
+.uploadrating {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+    max-width: 840px;
+}
+
+.uploadrating-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uploadrating-rating {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.uploadrating-btn-container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.uploadrating-medal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: var(--yellow);
+    filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.15));
+}
+
+.uploadrating-medal div {
+    height: 18px;
+}
+
+.uploadrating h1,
+.uploadrating p,
+.uploadrating span {
+    margin: 0;
+	color: var(--gray-1);
+}

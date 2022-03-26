@@ -1,0 +1,51 @@
+.bullet {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+	min-width: 82px;
+	height: 28px;
+	padding: 0;
+}
+
+.bullet__number {
+	width: 28px;
+	height: 28px;
+	background-color: var(--white-90);
+	border: 3px solid var(--white-25);
+	border-radius: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bullet__number-clicked {
+	background: var(--black-75);
+	border: 3px solid var(--black-15);
+}
+
+.bullet-number-gray {
+	color: var(--white) !important;
+}
+
+.bullet__number-circle {
+	color: var(--gray-1);
+}
+
+.bullet__text {
+	position: relative;
+}
+
+.bullet__text-data {
+	color: var(--gray-1);
+}
+
+.bullet__text-notification {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 44px;
+	top: 0px;
+	background: var(--blue-2);
+	border-radius: 5px;
+}

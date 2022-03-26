@@ -1,0 +1,22 @@
+.filterButton-container {
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;  
+    border-top: 1px solid rgba(0, 0, 0, 0.28);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.28);
+}
+
+.filterButton-container-colorText {
+    color: var(--gray-1)
+}
+
+.filterButton-container {
+    display: none;
+}
+
+.filterButton-icon {
+    display: flex;
+}

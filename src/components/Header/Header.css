@@ -1,0 +1,21 @@
+.header-container {
+    padding: 12px 30px 12px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 30px 12px 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.603) 0%, rgba(255, 255, 255, 0) 133.32%, rgba(0, 0, 0, 0.335) 133.33%);
+    /* backdrop-filter: blur(40px); */
+}
+
+.header-buttons_sign {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .header-buttons_sign {
+        display: none;
+    } 
+}

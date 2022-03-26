@@ -1,0 +1,37 @@
+.invoceTranslationImporter-main {
+    max-width: 52.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 20px;
+    backdrop-filter: blur(40px);
+	border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+}
+
+.invoceTranslationImporter-main p {
+    margin: 0px;
+}
+
+.invoceTranslationImporter-input {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.invoceTranslationImporter-color {
+    color: var(--gray-1);
+}
+
+@media (max-width: 820px) {
+    .invoceTranslationImporter-input {
+        flex-direction: column;
+    }
+
+    .invoceTranslationImporter-input .textfield input {
+        width: 100% !important;
+    }
+}

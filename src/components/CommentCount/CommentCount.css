@@ -1,0 +1,19 @@
+.commentCount {
+	max-height: 28px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 10px;
+	background: var(--white-50);
+	border-radius: 12px;
+}
+
+.commentCount span {
+	color: var(--gray-1);
+}
+
+.commentCount div img {
+	display: flex;
+}
+
+

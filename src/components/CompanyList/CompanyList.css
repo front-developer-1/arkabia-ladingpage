@@ -1,0 +1,62 @@
+/* contenedor principal*/
+.companyList-main {
+    max-width: 840px;
+    display: flex;
+    flex-direction: column;
+    color: var(--gray-1);
+    gap: 20px;
+}
+
+/* titulo del componente */
+.companyList-title{
+    font-family: 'Faktum-SemiBold';
+    font-size: 22px;
+    line-height: 28px;
+}
+
+/* descripcion del componente */
+.companyList-description{
+    font-family: 'Faktum';
+    font-size: 20px;
+    line-height: 25px;
+
+}
+
+/* lista de componenestees OrderMiniature*/
+.companyList-list{
+    display: flex;
+    flex-direction: row;
+   
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0px
+}
+
+/* contenedeor del componente footerNumber*/
+.companyList-footer-number {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ocultar componente filter mobile */
+.companyList-filter-mobile {
+    display: none;
+}
+
+/* Laptop */
+@media (max-width: 1020px) { 
+
+    .companyList-list {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 780px) { 
+
+    .companyList-main { 
+        align-items: center;
+    }
+}

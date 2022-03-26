@@ -1,0 +1,136 @@
+/* contenedor principal */
+.serviceHomePage-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/* contenedor de la seccion de sercicios */
+.serviceHomePage-services {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* contenedor del componente CompanyList */
+.serviceHomePage-company {
+    width: 100%;
+    max-width: 840px;
+}
+
+/* habilitando overflox en y */
+.serviceHomePage-company .companyList-list {
+    overflow-y: scroll;
+    width: 840px;
+    height: 645px;
+}
+
+/* agregando margin al filtro para desktop*/
+.serviceHomePage-company .companyList-main .companyList-filter-desktop {
+    margin: 7px 0px;
+}
+
+
+/* quitando padding de icono de country */
+.serviceHomePage-company .companyList-filter-desktop .filterSelectorExtended-item
+.city-country-display {
+    padding:0px;
+}
+
+
+
+/* Desktop */
+@media (max-width: 1330px) {
+
+    .serviceHomePage-company .companyList-main .companyList-list {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    /* componente CompayList */ 
+    .serviceHomePage-company .companyList-list {
+        width: 100%;
+    }
+
+    /* seccion de servicios */
+    .serviceHomePage-services {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 1130px) { 
+    
+    .serviceHomePage-company .companyList-main .companyList-filter-desktop {
+        display: none;
+    }
+
+    .serviceHomePage-company .companyList-main .companyList-filter-mobile {
+        display: block;
+    }
+
+}
+
+@media (max-width: 1060px) { 
+    .homePage-section-content .serviceHomePage-container {
+        flex-direction: column;
+    }
+
+    .serviceHomePage-company .companyList-main  .companyList-filter-desktop {
+        display: block;
+    }
+
+    .serviceHomePage-company .companyList-main  .companyList-filter-mobile {
+        display: none;
+    }
+
+    .serviceHomePage-services .servicesOptions-main .servicesOptions-text 
+    .dropdown, .serviceHomePage-services .servicesOptions-main .servicesOptions-text 
+    .dropdown .dropdown-select, .serviceHomePage-services .servicesOptions-main .servicesOptions-text 
+    .dropdown .dropdown-list, .serviceHomePage-services .servicesOptions-main .searchTextField-container {
+        background-color: var(--white);
+    }
+
+}
+
+@media (max-width: 780px) {
+    .serviceHomePage-company .companyList-main  .companyList-filter-desktop {
+        display: none;
+    }
+    
+    .serviceHomePage-company .companyList-main  .filterButton-container {
+        display: flex;
+    }
+
+}
+
+
+/* Tablet */
+@media (max-width: 720px) { 
+    .serviceHomePage-company .companyList-main  .companyList-filter-desktop {
+        display: none;
+    }
+
+    .serviceHomePage-company .companyList-main  .companyList-filter-mobile .filterSelectorMiniature-main {
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .serviceHomePage-company .companyList-main  .companyList-filter-mobile {
+        display: none;
+    }
+
+    .serviceHomePage-company .companyList-main  .filterButton-container {
+        display: flex;
+    }
+
+    
+}
+

@@ -1,0 +1,41 @@
+.uploadphoto {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+    max-width: 840px;
+}
+
+.uploadphoto-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.uploadphoto-photos {
+	max-width: fit-content;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 10px 20px;
+	border-radius: 24px;
+	background: var(--white-25);
+}
+
+.uploadphoto h1,
+.uploadphoto p,
+.uploadphoto span {
+    margin: 0;
+	color: var(--gray-1);
+}
+
+@media (max-width: 450px) {
+	.uploadphoto-photos {
+		gap: 10px;
+		padding: 10px 10px;
+	}
+}

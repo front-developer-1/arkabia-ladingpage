@@ -1,0 +1,76 @@
+.calendarRow-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendarRow-cell {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.calendarRow-colorCell {
+    color: var(--gray-2);
+}
+
+.calendarRow-colorDesactive {
+    color: var(--gray-4);
+}
+
+.calendarRow-weekSelectedLeft {
+    background-color: white;
+    border-radius: 45px 0px 0px 45px;
+}
+
+.calendarRow-weekSelected {
+    background-color: white;
+}
+
+.calendarRow-weekSelectedRigth {
+    background-color: white;
+    border-radius: 0px 45px 45px 0px;
+}
+
+.calendarRow-DaySelected {
+    width: 45px;
+    height: 45px;
+    color: var(--white); 
+    border-radius: 45px; 
+    background:rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.calendarRow-today {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px; 
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+@media (max-width: 450px) { 
+    .calendarRow-cell{
+        width: 100%;
+        height: 40px;
+    }
+
+    .calendarRow-DaySelected  {
+        width: 40px;
+        height: 40px; 
+    }
+    
+    .calendarRow-today  {
+        width: 40px;
+        height: 40px;
+    }
+}

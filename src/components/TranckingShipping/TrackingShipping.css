@@ -1,0 +1,183 @@
+.trackingShipping-container {
+    max-width: 840px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.trackingShipping-static {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.trackingShipping-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 30px;
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+    background: var(--background);
+    border-image-source: var(--border-image-source);
+}
+
+.trackingShipping-color {
+    color: var(--gray-1);
+}
+
+.trackingShipping-icon img{
+    display: flex;
+}
+
+.trackingShipping-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.trackingShipping-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.gmnoprint {
+    display: none !important;
+}
+
+.trackingShipping-static-mobile {
+    width: fit-content;
+    padding: 14px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+}
+
+.trackingShipping-static-mobile-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0px 15px;
+}
+
+.trackingShipping-static-mobile-row--line {
+    border-right: 1px solid #C4C4C4;;
+}
+
+.trackingShipping-static-mobile-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trackingShipping-static-mobile {
+    display: none;
+}
+
+.trackingShipping-icon-mobile img {
+    width: 15px;
+    height: 12px;
+
+}
+
+/* Desktop */
+@media (max-width: 1320px) {
+    .trackingShipping-static {
+        gap: 10px;
+    }
+
+    .trackingShipping-card {
+        padding: 10px 20px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1245px) {
+    .trackingShipping-static-mobile {
+        display: flex;
+        align-self: center;
+    }
+    .trackingShipping-static {
+        display: none;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .trackingShipping-static {
+        flex-direction: column;
+    }
+    
+    .trackingShipping-custom {
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .trackingShipping-static-mobile {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 470px) {
+    .trackingShipping-static {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+   
+    .trackingShipping-static-mobile-row .trackingShipping-static-mobile-text div {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .trackingShipping-container {
+        width: 95%;
+    }
+
+    .trackingShipping-static {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .trackingShipping-icon {
+        margin-right: 10px;    
+    }
+
+    .Maps__box {
+        width: 100%;
+        height: 440px;
+    }
+
+    .trackingShipping-static-mobile-row {
+        gap: 5px;
+        padding: 0px 5px;
+    }
+
+    .trackingShipping-static-mobile-row .trackingShipping-static-mobile-text div {
+        font-size: 10px;
+    }
+
+    @media (max-width: 400px) { 
+        .trackingShipping-static-mobile-row {
+            gap: 3px;
+            padding: 0px 3px;
+        }
+    }
+
+}

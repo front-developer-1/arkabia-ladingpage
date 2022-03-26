@@ -1,0 +1,35 @@
+.shipment {
+	position: relative;
+	max-width: 300px;
+}
+
+.ports-content {
+	position: absolute;
+	left: 0;
+	margin-top: 10px;
+	width: -webkit-fill-available;
+	padding: 2px;
+	z-index: 1;
+	background: var(--white);
+	border-radius: 12px;
+	overflow-x: hidden;
+}
+
+.ports-content div {
+	cursor: pointer;
+}
+
+.ports-content .row:hover {
+	background: var(--black-05) !important;
+}
+
+.ports-content .row {
+	border-radius: 12px;
+}
+
+.shipment-map {
+	width: inherit;
+	min-height: 194px;
+	border-radius: 12px !important;
+	margin-top: 2px;
+}

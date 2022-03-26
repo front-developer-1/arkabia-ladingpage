@@ -1,0 +1,78 @@
+.payment {
+	background: var(--white-90);
+	border-radius: 24px;
+	max-width: 760px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.payment-container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.payment-container h3 {
+	margin: 0;
+	flex: 1;
+	color: var(--gray-1);
+}
+
+.payment form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.payment-cards-img {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.payment-textfields_1,
+.payment-textfields_2 {
+	display: flex;
+	gap: 20px;
+}
+
+.payment-textfields_1 .textfield,
+.payment-textfields_2 .textfield {
+	width: 100%;
+}
+
+.payment-textfields_2 div:last-child {
+	max-width: 104px;
+}
+
+.payment button {
+	width: 100%;
+}
+
+@media (max-width: 375px) {
+	.payment {
+		max-width: 295px;
+	}
+
+	.payment form .payment-textfields_1,
+	.payment form .payment-textfields_2 {
+		flex-wrap: wrap;
+	}
+
+	.payment-textfields_2 div:last-child {
+		min-width: 100%;
+	}
+}
+
+@media (max-width: 620px) {
+	.payment form .payment-textfields_1,
+	.payment form .payment-textfields_2 {
+		flex-wrap: wrap;
+	}
+
+	.payment-textfields_2 div:last-child {
+		min-width: 100%;
+	}
+}

@@ -1,0 +1,25 @@
+.importation-substructure-cargoagentandhscode-table{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+	backdrop-filter: blur(40px);
+	border-radius: 12px;
+    background: var(--background);
+    border: 1px solid;
+    border-image-source: var(--border-image-source);
+	max-width: 840px;	
+}
+
+.importation-substructure-cargoagentandhscode-table-bottom {
+	overflow: hidden;
+	background: var(--white-15);
+	backdrop-filter: blur(40px);
+	border-radius: 12px;
+}
+
+.importation-substructure-cargoagentandhscode-table h1,
+.importation-substructure-cargoagentandhscode-table p {
+	margin: 0;
+	color: var(--gray-1);
+}

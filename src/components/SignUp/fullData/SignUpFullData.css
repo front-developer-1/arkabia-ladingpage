@@ -1,0 +1,26 @@
+.signUpFullData-container {
+    max-width: 29.438rem;
+    padding: 0px 20px   ;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.signUpFullData-password {
+    max-width: 431px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.signUpFullData-password .textfield {
+    width: 100%;
+}
+
+@media (max-width: 470px) {
+
+    .signUpFullData-container {
+        padding: 0px;
+    }
+
+}
